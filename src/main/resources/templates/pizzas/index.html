@@ -21,6 +21,9 @@
                     <div class="link-container">
                         <a th:href="@{/pizzas/{id}(id=${pizza.id})}" class="card-link">vedi in dettaglio</a>
                         <a th:href="@{/}">Torna alla homepage</a>
+                        <form action="#" th:action="@{/pizzas/delete/{id}(id=${pizza.id})}" method="post">  
+                            <button type="submit"><i class="fa-solid fa-trash-can"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>

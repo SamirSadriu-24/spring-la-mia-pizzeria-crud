@@ -35,6 +35,9 @@ public class Pizza {
     @DecimalMax(value = "99", message = "il prezzo deve essere di massimo 99 euro")
     private BigDecimal price;
 
+    public void setId(Integer id){
+        this.id = id;
+    }
     public int getId(){
         return this.id;
     }
